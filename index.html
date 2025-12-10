@@ -8,124 +8,21 @@
         
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-        :root {
-            --bg-body: #121212;
-            --bg-card: #1e1e1e;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-color: #64b5f6; /* A nice modern blue */
-            --hover-overlay: rgba(255, 255, 255, 0.05);
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-primary);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 40px auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 0;
-            letter-spacing: -0.5px;
-        }
-        
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            margin-top: 10px;
-        }
-
-        .update-time {
-            display: inline-block;
-            background: #2c2c2c;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-top: 15px;
-        }
-
-        .news-grid {
-            display: grid;
-            gap: 20px;
-        }
-
-        .news-card {
-            background-color: var(--bg-card);
-            border-radius: 12px;
-            padding: 20px;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: all 0.2s ease-in-out;
-            border: 1px solid #333;
-        }
-
-        .news-card:hover {
-            transform: translateY(-3px);
-            background-color: #252525;
-            border-color: var(--accent-color);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .card-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        .source-tag {
-            font-weight: 600;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .card-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin: 0;
-            line-height: 1.4;
-            /* Truncate title after 3 lines */
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            background: var(--bg-card);
-            border-radius: 12px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #555;
-            font-size: 0.85rem;
-        }
-        footer a { color: #777; text-decoration: none; }
+        :root { --bg-body: #121212; --bg-card: #1e1e1e; --text-primary: #ffffff; --text-secondary: #a0a0a0; --accent: #64b5f6; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-body); color: var(--text-primary); margin: 0; padding: 20px; line-height: 1.5; }
+        .container { max-width: 700px; margin: 40px auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin: 0; letter-spacing: -0.5px; }
+        .subtitle { color: var(--text-secondary); margin-top: 10px; }
+        .update-time { display: inline-block; background: #2c2c2c; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); margin-top: 15px; }
+        .news-grid { display: grid; gap: 20px; }
+        .news-card { background-color: var(--bg-card); border-radius: 12px; padding: 20px; text-decoration: none; color: inherit; display: block; border: 1px solid #333; transition: all 0.2s; }
+        .news-card:hover { transform: translateY(-3px); background-color: #252525; border-color: var(--accent); }
+        .card-meta { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.85rem; color: var(--text-secondary); }
+        .source-tag { font-weight: 600; color: var(--accent); text-transform: uppercase; }
+        .card-title { font-size: 1.25rem; font-weight: 600; margin: 0; line-height: 1.4; }
+        .empty-state { text-align: center; padding: 40px; color: var(--text-secondary); background: var(--bg-card); border-radius: 12px; }
+        footer { text-align: center; margin-top: 50px; color: #555; font-size: 0.85rem; }
     </style>
     
     </head>
@@ -134,9 +31,8 @@
             <header>
                 <h1>🇮🇳 India Semicon Daily</h1>
                 <div class="subtitle">Your daily briefing on India's semiconductor ambition.</div>
-                <div class="update-time">Last updated: 10 Dec 2025 at 11:35 AM IST</div>
+                <div class="update-time">Last updated: 10 Dec 2025 at 05:09 PM IST</div>
             </header>
-
             <main class="news-grid">
     
             <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9zR2x5X1VUd2NUR1Ewa3R5RUpiY1g4dVJncmJlWXNvWW5kRmxFdkxTZnoyQUtmMWRXQ2t4dnJyWlpHM01rWjZhandRTkVxaENOQmtFX1BnQlZOMHBKWE9FRG5wUThHdjNoR0x6NXRla0RrVkRXYnA0?oc=5" target="_blank" class="news-card">
@@ -297,14 +193,6 @@
                     <span>09 Dec 2025</span>
                 </div>
                 <h2 class="card-title">Intel CEO Lip-Bu Tan meets PM Narendra Modi; says company committed to support India Semiconductor Missio - Times of India</h2>
-            </a>
-            
-            <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOcnpraGVTckcxV200SWs3SURfTEp1aWZXbXRrcnlqSWlyUVNmVV9DR2VHNmM2UkZBQmlpTllub004TktzY1JOM2RjclVOcUJXejB6czloTUVtRlhMSHhUMDZLN1J5ZjNhZW5TNk8zZjhORktPZjI3dEl0RnNfQWd2MFhDWQ?oc=5" target="_blank" class="news-card">
-                <div class="card-meta">
-                    <span class="source-tag">Evrim Ağacı</span>
-                    <span>10 Dec 2025</span>
-                </div>
-                <h2 class="card-title">Intel Bets Big On India And Chip Innovation - Evrim Ağacı</h2>
             </a>
             
             <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNFM2N2VudzhmU1M2R2lMSk9icVhscEhpNkFYY2JRVWw2RXFtbVVGR3diYTVBUmxMN1p1WG00YlhlUkY0c3lEVHM1NEdtSXZkNmZhSG1VOVJoU0pKNmhTN0pkWmdBTHduOFRuVTc0REN4UlJCNWlSZWprOU9tbGFtcUJYdUQ5eTE0Q1BfQnRGV3ZXdUZLcHptbDlkdE9PRXJxeWR3NDZfa3dHbERGb3hvOXRpZ0FwM0VvbWpz0gG7AUFVX3lxTFA0UzY3ZW53OGZTUzZHaUxKT2JxWGxwSGk2QVhjYlFVbDZFcW1tVUZHd2JhNUFSbEw3WnVYbTRiWGVSRjRzeURUczU0R21JdmQ2ZmFIbVU5UmhTSko2aFM3SmRaZ0FMd244VG5VNzREQ3hSUkI1aVJlams5T21sYW1xQlh1RDl5MTRDUF9CdEZXdld1Rktwem1sOWR0T09FcnF5ZHc0Nl9rd0dsREZveG85dGlnQXAzRW9tanM?oc=5" target="_blank" class="news-card">
@@ -476,9 +364,7 @@
             </a>
             
             </main>
-            <footer>
-                <p>Automated by GitHub Actions. Data sourced from Google News.</p>
-            </footer>
+            <footer><p>Automated by GitHub Actions • Data sourced from Google News</p></footer>
         </div>
     </body>
     </html>
