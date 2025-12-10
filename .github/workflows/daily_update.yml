@@ -24,7 +24,7 @@ jobs:
         run: |
           pip install feedparser
           pip install newspaper3k
-          pip install lxml
+          pip install lxml[html_clean]
           pip install requests
 
       - name: Run script
